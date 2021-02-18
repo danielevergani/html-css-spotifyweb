@@ -6,6 +6,21 @@
 }
 /* reset */
 
+/* buttons */
+.btn {
+  border: none;
+  background-color: transparent;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* mix */
+
+.list__none{
+  list-style: none;
+}
+
 body {
   height: 100vh;
   background-color: green;
@@ -20,8 +35,25 @@ main {
 aside {
   width: 250px;
   height: 100%;
-  background-color: blue;
+  background-color: black;
+  color: white;
   flex-shrink: 0;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.main__nav__logo{
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.playlist__nav__logo {
+  width: 55px;
+  height: 55px;
+  vertical-align: middle;
 }
 
 .home__page {
