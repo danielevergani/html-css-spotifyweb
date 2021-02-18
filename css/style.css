@@ -33,6 +33,7 @@ main {
 }
 
 aside {
+  position: relative;
   width: 250px;
   height: 100%;
   background-color: black;
@@ -50,10 +51,25 @@ aside {
   vertical-align: middle;
 }
 
+.playlist__nav{
+  overflow: auto;
+}
+
 .playlist__nav__logo {
   width: 55px;
   height: 55px;
   vertical-align: middle;
+}
+
+.account{
+  position: absolute;
+  bottom: 0px;
+  background-color: black;
+}
+
+.account p {
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
 }
 
 .home__page {
@@ -70,16 +86,6 @@ aside {
   position: fixed;
   top: 0;
   right: 0;
-}
-
-.boxprova_wrap {
-  margin-top: 80px;
-}
-
-.boxprova {
-  width: 100px;
-  height: 300px;
-  border: 1px solid black;
 }
 
 footer{
