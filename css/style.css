@@ -22,13 +22,16 @@
 }
 
 body {
-  height: 100vh;
   background-color: green;
+}
+
+.wrapper {
+  height: 100vh;
 }
 
 main {
   display: flex;
-  height: calc(100% - 80px);
+  height: calc(100vh - 80px);
   background-color: red;
 }
 
@@ -52,7 +55,8 @@ aside {
 }
 
 .playlist__nav{
-  overflow: auto;
+  overflow-y: scroll;
+  max-height: calc(50% - 50px);
 }
 
 .playlist__nav__logo {
