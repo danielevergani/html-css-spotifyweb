@@ -74,6 +74,16 @@ aside .btn{
   width: 100%;
 }
 
+.logo__resp{
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+.logo__resp img{
+  width: 100%;
+}
+
 .main__nav{
   margin-bottom: 20px;
 }
@@ -155,6 +165,20 @@ aside .btn{
   color: #808080;
 }
 
+.instal__resp{
+  display: none;
+}
+
+.user__resp{
+  display: none;
+}
+
+/* responsive aside */
+
+
+
+/* home page */
+
 .home__page {
   height: 100%;
   width: 100%;
@@ -202,27 +226,6 @@ aside .btn{
 .music{
   flex-basis: calc(100% / 6);
   padding: 0 5px;
-}
-
-/* responsive */
-
-@media screen and (max-width: 1070px){
-  .music{
-    flex-basis: calc(100% / 4);
-    padding: 0 5px;
-  }
-
-  .music__row{
-    flex-shrink: 0;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 768px){
-  .music{
-    flex-basis: calc(100% / 2);
-    padding: 0 5px;
-  }
 }
 
 footer{
@@ -303,4 +306,65 @@ footer img{
   width: 50%;
   height: 2px;
   background-color: green;
+}
+
+@media screen and (max-width: 1070px){
+  .music{
+    flex-basis: calc(100% / 4);
+    padding: 0 5px;
+  }
+
+  .music__row{
+    flex-shrink: 0;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .music{
+    flex-basis: calc(100% / 2);
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  aside {
+    width: 60px;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .logo__resp {
+    display: block;
+  }
+
+  .main__nav span{
+    display: none;
+  }
+
+  .playlist__section{
+    display: none;
+  }
+
+  .account p {
+    display: none
+  }
+
+  .account h4{
+    display: none
+  }
+
+  .instal__resp{
+    display: block;
+  }
+
+  .user__resp{
+    display: block;
+  }
+
+  .upgrade__bar{
+    width: calc(100% - 60px);
+  }
 }
