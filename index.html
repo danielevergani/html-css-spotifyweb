@@ -26,10 +26,10 @@
               <li><button class="btn"><img class="main__nav__logo" src="https://via.placeholder.com/350x150" alt=""><span>La tua libreria</span></button></li>
             </ul>
           </nav>
+          <h4>Playlist</h4>
+          <button class="btn"><img class="playlist__nav__logo" src="https://via.placeholder.com/350x150" alt=""><span>Crea playlist</span></button>
           <nav class="playlist__nav">
             <ul>
-              <li><h4>Playlist</h4></li>
-              <li><button class="btn"><img class="playlist__nav__logo" src="https://via.placeholder.com/350x150" alt=""><span>Crea playlist</span></button></li>
               <li><button class="btn">Nome Playlist</button></li>
               <li><button class="btn">Nome Playlist</button></li>
               <li><button class="btn">Nome Playlist</button></li>
@@ -134,7 +134,47 @@
         </div>
       </main>
       <footer>
-
+        <div class="player__details">
+          <img src="https://via.placeholder.com/350x350" alt="">
+          <div class="song__details">
+            <h5>titolo</h5>
+            <p>autore canzone</p>
+          </div>
+          <ul class="list__none">
+            <li class="list__inline"><i class="far fa-heart"></i></li>
+            <li class="list__inline"><i class="far fa-folder"></i></li>
+          </ul>
+        </div>
+        <div class="music__commands">
+          <div class="music__interaction">
+            <ul class="list__none">
+              <li class="list__inline"><i class="fas fa-random"></i></li>
+              <li class="list__inline"><i class="fas fa-step-backward"></i></li>
+              <li class="list__inline"><i class="far fa-play-circle"></i></li>
+              <li class="list__inline"><i class="fas fa-step-forward"></i></li>
+              <li class="list__inline"><i class="fas fa-redo-alt"></i></li>
+            </ul>
+          </div>
+          <div class="music__progression">
+            <p><small>0.25</small></p>
+            <div class="audio__total">
+              <div class="audio_progression"></div>
+            </div>
+            <p><small>4.12</small></p>
+          </div>
+        </div>
+        <div class="music__volume">
+          <ul class="list__none">
+            <li class="list__inline" ><i class="fas fa-list-ul"></i></li>
+            <li class="list__inline" ><i class="fas fa-desktop"></i></li>
+            <li class="list__inline" ><i class="fas fa-volume-up"></i></li>
+            <li class="list__inline" >
+              <div class="volume__total">
+                <div class="volume_progression"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
   </body>
