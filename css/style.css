@@ -63,6 +63,7 @@ aside {
   color: white;
   flex-shrink: 0;
   overflow: hidden;
+  padding: 0 10px;
 }
 
 aside .btn{
@@ -73,10 +74,54 @@ aside .btn{
   width: 100%;
 }
 
+.main__nav{
+  margin-bottom: 20px;
+}
+
+.main__nav li{
+  margin: 10px 0;
+}
+
 .main__nav__logo{
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   vertical-align: middle;
+  filter: invert(50%);
+}
+
+.main__nav span{
+  color: #808080;
+}
+
+.main__nav li:hover .main__nav__logo{
+  filter: none;
+}
+
+.main__nav li:hover span{
+  color: white;
+}
+
+.playlist__nav__logo {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  vertical-align: middle;
+  background-color: #808080;
+}
+
+.playlist__nav__logo i{
+  font-size: 25px;
+  line-height: 45px;
+}
+
+.playlist__section h4{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.playlist__section span{
+  color: #808080;
+  margin-left: 5px;
 }
 
 .playlist__nav{
@@ -85,10 +130,12 @@ aside .btn{
   max-height: calc(35% - 50px);
 }
 
-.playlist__nav__logo {
-  width: 55px;
-  height: 55px;
-  vertical-align: middle;
+.playlist__nav li{
+  margin: 5px 0;
+}
+
+.playlist__nav .btn{
+  color: #808080;
 }
 
 .account{
@@ -99,8 +146,13 @@ aside .btn{
 }
 
 .account p {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #808080;
   margin-bottom: 10px;
+  color: #808080;
+}
+
+.account h4 i{
+  color: #808080;
 }
 
 .home__page {
