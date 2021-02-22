@@ -658,16 +658,95 @@ footer img{
     width: calc(100% - 60px);
   }
 
+  footer{
+    padding: 0 10px;
+  }
+
   footer img{
     width: 30px;
     height: 30px;
   }
 
   .player__details{
-    width: 30%;
+    width: 10%;
+    transition: width .5s
+  }
+
+  .player__details .song__details{
+    display: none;
+  }
+
+  .player__details ul{
+    display: none;
+  }
+
+  .player__details:hover .song__details{
+    display: block;
+  }
+
+  .player__details:hover ul{
+    display: block;
+  }
+
+  .player__details:hover{
+    width: 50%;
   }
 
   .music__commands{
-    width: 45%;
+    width: 10%;
+    transition: width .5s
+  }
+
+  .control{
+    display: none;
+  }
+
+  .music__progression{
+    display: none;
+  }
+
+  .music__commands:hover .control{
+    display: block;
+  }
+
+  .music__commands:hover .music__progression{
+    display: flex;
+  }
+
+  .music__commands:hover{
+    width: 80%;
+  }
+
+  .screen__volume{
+    width: 10%;
+    transition: width .5s;
+  }
+
+  .screen__option i{
+    margin-left: 10px;
+  }
+
+  .screen__volume .fa-volume-up {
+    font-size: 20px;
+  }
+
+  .screen__volume .screen__option{
+    display: none;
+  }
+
+  .screen__volume .volume__total{
+    display: none;
+  }
+
+  .screen__volume:hover .screen__option{
+    display: flex;
+  }
+
+  .screen__volume:hover .volume__total{
+    display: block;
+  }
+
+  .screen__volume:hover{
+    width: 50%;
   }
 }
