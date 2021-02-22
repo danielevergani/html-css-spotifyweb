@@ -52,6 +52,7 @@ body{
 
 .wrapper {
   height: 100vh;
+  position: relative;
 }
 
 main {
@@ -61,7 +62,7 @@ main {
 }
 
 aside {
-  position: relative;
+  /* position: relative; */
   width: 250px;
   height: 100%;
   background-color: black;
@@ -140,9 +141,8 @@ aside .btn{
 }
 
 .playlist__nav{
-  overflow-y: auto;
-  height: 100%;
-  max-height: calc(35% - 50px);
+  height: 20%;
+  overflow: auto;
 }
 
 .playlist__nav li{
@@ -155,7 +155,7 @@ aside .btn{
 
 .account{
   position: absolute;
-  bottom: 0px;
+  bottom: 80px;
   background-color: black;
   padding-top: 3px;
 }
@@ -264,6 +264,7 @@ aside .btn{
 
 .music img{
   width: 100%;
+  height: 100%;
 }
 
 footer{
@@ -411,6 +412,9 @@ footer img{
 @media screen and (max-width: 576px){
   aside {
     width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .logo{
@@ -426,6 +430,10 @@ footer img{
   }
 
   .playlist__section{
+    display: none;
+  }
+
+  .playlist__nav{
     display: none;
   }
 
