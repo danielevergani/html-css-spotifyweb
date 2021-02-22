@@ -140,6 +140,11 @@ aside .btn{
   margin-bottom: 10px;
 }
 
+.playlist__section h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 .playlist__nav__logo {
   display: inline-block;
   width: 45px;
@@ -152,8 +157,13 @@ aside .btn{
   font-size: 25px;
   line-height: 45px;
   animation-name: rotate;
-  animation-duration: 1s;
+  animation-duration: 2s;
   transition: transform .3s, color .3s;
+}
+
+.playlist__section span {
+  font-size: 18px;
+  vertical-align: text-top;
 }
 
 @keyframes rotate {
@@ -164,12 +174,6 @@ aside .btn{
 .playlist__nav__logo i:hover{
   transform: rotate(90deg);
   color: green;
-}
-
-
-.playlist__section h4{
-  font-size: 20px;
-  margin-bottom: 10px;
 }
 
 .playlist__section span{
@@ -183,11 +187,25 @@ aside .btn{
 }
 
 .playlist__nav li{
+  width: 80%;
   margin: 5px 0;
+  margin-left: 1px;
+  transition: transform .3s, padding .2s;
+}
+
+.playlist__nav li:hover{
+  transform: scale(1.2);
+  margin-left: 20px;
 }
 
 .playlist__nav .btn{
   color: #808080;
+  font-size: 15px;
+  transition: border .2s;
+}
+
+.playlist__nav .btn:hover{
+  border-bottom: 2px solid green;
 }
 
 .account{
@@ -198,6 +216,7 @@ aside .btn{
 .account p {
   border-bottom: 2px solid #808080;
   margin-bottom: 10px;
+  padding-bottom: 10px;
   color: #808080;
 }
 
