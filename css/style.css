@@ -197,8 +197,8 @@ aside .btn{
 
 .playlist__nav li{
   width: 80%;
-  margin: 5px 0;
-  margin-left: 1px;
+  margin: 10px 0;
+  margin-left: 5px;
   transition: transform .4s, padding .4s;
 }
 
