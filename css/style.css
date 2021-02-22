@@ -223,12 +223,35 @@ aside .btn{
 
 .genre__choice .btn{
   color: white;
+  font-style: 14px;
+  font-weight: normal;
+  transition: font-size 0.3s, font-weight 0.3s;
+}
+
+.genre__choice .btn::after{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: green;
+  transition: width .3s;
+}
+
+.genre__choice .btn:hover{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.genre__choice .btn:hover:after{
+  width: 100%;
 }
 
 .genre__choice li{
   display: inline-block;
   margin: 0 10px;
 }
+
+
 
 .title__row{
   margin: 20px 0 20px 10px;
@@ -249,10 +272,9 @@ aside .btn{
 
 .music{
   position: relative;
-  transition: background 1s filter 1s;
 }
 
-.music:hover::before{
+.music::before{
   content: "";
   position: absolute;
   top: 0;
@@ -261,9 +283,11 @@ aside .btn{
   right: 0;
   background-color: rgba(255,255,255,0.2);
   filter: blur(5px);
+  opacity: 0;
+  transition: all 0.3s;
 }
 
-.music:hover::after{
+.music::after{
   font-family: "font awesome 5 free";
   content: "\f144";
   font-size: 80px;
@@ -273,6 +297,25 @@ aside .btn{
   left: 50%;
   transform: translateY(-80%);
   transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.music:hover:after{
+  opacity: 1;
+}
+
+.music:hover:before{
+  opacity: 1;
+}
+
+.music:hover{
+  opacity: 1;
+}
+
+.music img{
+  filter: brightness(1);
+  transition: filter 0.3s;
 }
 
 .music:hover img{
