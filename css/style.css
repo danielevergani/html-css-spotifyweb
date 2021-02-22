@@ -55,6 +55,15 @@ body{
   overflow: hidden;
 }
 
+a{
+  text-decoration: none;
+}
+
+a:focus{
+  outline: none;
+}
+/* end mix */
+
 .wrapper {
   height: 100vh;
   position: relative;
@@ -190,7 +199,7 @@ aside .btn{
   width: 80%;
   margin: 5px 0;
   margin-left: 1px;
-  transition: transform .3s, padding .2s;
+  transition: transform .4s, padding .4s;
 }
 
 .playlist__nav li:hover{
@@ -201,7 +210,7 @@ aside .btn{
 .playlist__nav .btn{
   color: #808080;
   font-size: 15px;
-  transition: border .2s;
+  transition: border .3s;
 }
 
 .playlist__nav .btn:hover{
@@ -298,7 +307,6 @@ aside .btn{
 }
 
 
-
 .title__row{
   margin: 20px 0 20px 10px;
 }
@@ -358,8 +366,6 @@ aside .btn{
 .music:hover{
   opacity: 1;
 }
-
-
 
 .img__container{
   display: inline-block;
@@ -559,6 +565,14 @@ footer img{
     padding: 0 5px;
   }
 
+  .song__details h5{
+    font-size: 12px;
+  }
+
+  .song__details p{
+    font-size: 12px;
+  }
+
   .screen__volume{
     justify-content: flex-end;
   }
@@ -624,10 +638,20 @@ footer img{
   .instal__resp{
     display: block;
     margin-bottom: 10px;
+    transition: transform .3s
+  }
+
+  .instal__resp:hover{
+    transform: scale(1.2);
   }
 
   .user__resp{
     display: block;
+    transition: transform .3s
+  }
+
+  .user__resp:hover{
+    transform: scale(1.2);
   }
 
   .upgrade__bar{
