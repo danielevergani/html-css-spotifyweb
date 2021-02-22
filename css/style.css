@@ -77,6 +77,10 @@ aside .btn{
   color: white;
 }
 
+.logo{
+  margin-top: 10px;
+}
+
 .logo img {
   width: 100%;
 }
@@ -85,6 +89,7 @@ aside .btn{
   display: none;
   width: 30px;
   height: 30px;
+  margin-top: 10px;
 }
 
 .logo__resp img{
@@ -118,6 +123,10 @@ aside .btn{
   color: white;
 }
 
+.playlist__section{
+  margin-bottom: 10px;
+}
+
 .playlist__nav__logo {
   display: inline-block;
   width: 45px;
@@ -133,7 +142,7 @@ aside .btn{
 
 .playlist__section h4{
   font-size: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .playlist__section span{
@@ -305,7 +314,22 @@ footer img{
 .music__interaction ul{
   width: 80%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.music__interaction ul li{
+  margin: 0 5% 0 5%;
+}
+
+.music__interaction ul li i:not(.play__button){
+  font-size: 14px;
+}
+
+.play__button{
+  font-size: 25px;
+  vertical-align: baseline;
 }
 
 .music__progression{
