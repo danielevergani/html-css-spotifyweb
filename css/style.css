@@ -62,7 +62,8 @@ main {
 }
 
 aside {
-  /* position: relative; */
+  display: flex;
+  flex-direction: column;
   width: 250px;
   height: 100%;
   background-color: black;
@@ -141,7 +142,7 @@ aside .btn{
 }
 
 .playlist__nav{
-  height: 20%;
+  height: 100%;
   overflow: auto;
 }
 
@@ -154,8 +155,6 @@ aside .btn{
 }
 
 .account{
-  position: absolute;
-  bottom: 80px;
   background-color: black;
   padding-top: 3px;
 }
@@ -437,6 +436,9 @@ footer img{
     display: none;
   }
 
+  .account{
+    margin-top: auto;
+  }
   .account p {
     display: none
   }
@@ -447,6 +449,7 @@ footer img{
 
   .instal__resp{
     display: block;
+    margin-bottom: 10px;
   }
 
   .user__resp{
@@ -460,5 +463,13 @@ footer img{
   footer img{
     width: 30px;
     height: 30px;
+  }
+
+  .player__details{
+    width: 30%;
+  }
+
+  .music__commands{
+    width: 45%;
   }
 }
