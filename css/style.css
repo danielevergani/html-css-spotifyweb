@@ -220,6 +220,7 @@ aside .btn{
 .account{
   background-color: black;
   padding-top: 3px;
+  margin-bottom: 10px;
 }
 
 .account p {
@@ -341,21 +342,20 @@ aside .btn{
   transition: all 0.3s;
 }
 
-.music::after{
+.img__container::after{
   font-family: "font awesome 5 free";
   content: "\f144";
   font-size: 80px;
   color: white;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
-  transform: translateY(-80%);
-  transform: translateX(-50%);
+  transform: translate(-50% , -50%);
   opacity: 0;
   transition: all 0.3s;
 }
 
-.music:hover:after{
+.music:hover .img__container:after{
   opacity: 1;
 }
 
