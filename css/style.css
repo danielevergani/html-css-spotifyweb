@@ -135,6 +135,7 @@ aside .btn{
 .main__nav span{
   color: #808080;
   transition: color .3s;
+  vertical-align: middle;
 }
 
 .main__nav li:hover .main__nav__logo{
